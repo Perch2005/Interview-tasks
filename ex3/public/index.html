@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+
+    <button id="openAddReminderModal">Add Reminder</button>
+
+    <div id="addReminderModal">
+        <h2>Add Reminder</h2>
+        <label for="reminderText">Reminder Text:</label>
+        <input type="text" id="reminderText" name="reminderText" required>
+        <br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description">
+        <br>
+        <label for="reminderDate">Reminder Date:</label>
+        <input type="date" id="reminderDate" name="reminderDate" required>
+        <br>
+        <label for="reminderTime">Reminder Time:</label>
+        <input type="time" id="reminderTime" name="reminderTime" required>
+        <br>
+        <button id="saveReminder">Save Reminder</button>
+        <button id="closeModal">Close</button>
+    </div>
+
+    <div id="reminderList"></div>
+
+    <div id="menu">
+        <button id="showAllButton">Show All</button>
+        <button id="todayButton">Today</button>
+        <button id="thisWeekButton">This Week</button>
+        <div class="dropdown">
+            <button class="dropbtn">Sort</button>
+            <div class="dropdown-content">
+                <a href="#" data-sort="lowToHigh">Low to High</a>
+                <a href="#" data-sort="highToLow">High to Low</a>
+                <a href="#" data-sort="notSorted">Not Sorted</a>
+            </div>
+        </div>
+        <div id="calendar"></div>
+
+        <div class="checkbox">
+            <label for="showCompleted">Show Completed</label>
+            <input type="checkbox" id="showCompleted">
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+</html>

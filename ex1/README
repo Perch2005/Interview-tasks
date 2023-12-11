@@ -1,0 +1,53 @@
+Require Matrix Builder
+
+Overview
+The Require Matrix Builder is a Java program designed to traverse a directory structure, identify files containing "require" statements, and build a matrix based on these dependencies. The matrix is then sorted using a custom comparator, PathContainComparator, to ensure that files with dependencies are ordered after the files they depend on.
+
+Usage
+
+Prerequisites
+Java Development Kit (JDK) installed
+A directory structure containing files with "require" statements
+
+Running the Program
+1. Compile the Java program using the following command in the terminal:
+
+javac RequireMatrixBuilder.java
+
+2. Run the compiled program:
+
+java RequireMatrixBuilder
+
+The program will traverse the specified base path, identify dependencies, build a matrix, and print the sorted matrix to the console.
+
+File Structure
+RequireMatrixBuilder.java: The main Java program containing the logic to build the require matrix.
+PathContainComparator.java: A custom comparator used for sorting the matrix based on file dependencies.
+README.md: This documentation file.
+
+How It Works
+1. Traversing Files: The program recursively traverses the specified base path to identify files and their dependencies.
+
+2. Extracting Require Lines: For each file, it extracts lines containing "require" statements and adds them to the matrix.
+
+3. Building Matrix: The matrix is constructed, where each row represents a file and its dependencies.
+
+4. Sorting Matrix: The matrix is sorted using the PathContainComparator to ensure files with dependencies come after the files they depend on.
+
+5. Printing Matrix: The sorted matrix is printed to the console.
+
+Custom Comparator (PathContainComparator)
+The comparator ensures that files with dependencies come after the files they depend on in the sorted matrix.
+
+Important Note
+This program assumes a specific format for "require" statements and may need adjustments based on the actual usage in your code.
+
+
+Example Output
+
+/path/to/file1.js	require('dependency1')	require('dependency2')
+/path/to/file2.js	require('dependency1')
+/path/to/file3.js
+...
+
+Feel free to customize the program according to your specific requirements and adapt the "require" statement extraction logic if needed.

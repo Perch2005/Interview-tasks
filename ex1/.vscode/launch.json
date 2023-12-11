@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "StringManipulation",
+      "request": "launch",
+      "mainClass": "StringManipulation",
+      "projectName": "ex1_7db12de4"
+    },
+    {
+      "type": "java",
+      "name": "RequireMatrixBuilder",
+      "request": "launch",
+      "mainClass": "RequireMatrixBuilder",
+      "projectName": "ex1_7db12de4"
+    },
+    {
+      "type": "java",
+      "name": "FileRequirementsSorter",
+      "request": "launch",
+      "mainClass": "FileRequirementsSorter",
+      "projectName": "ex1_7db12de4"
+    },
+    {
+      "type": "java",
+      "name": "FileSorter",
+      "request": "launch",
+      "mainClass": "FileSorter",
+      "projectName": "ex1_7db12de4"
+    },
+    {
+      "type": "java",
+      "name": "FileDependencySorter",
+      "request": "launch",
+      "mainClass": "FileDependencySorter",
+      "projectName": "ex1_7db12de4"
+    },
+    {
+      "type": "java",
+      "name": "FileOrdering",
+      "request": "launch",
+      "mainClass": "FileOrdering",
+      "projectName": "ex1_7db12de4"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/darkdragon/Desktop/test/ex1",
+      "program": "/Users/darkdragon/Desktop/test/ex1/build/Debug/outDebug"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+Overview
+
+This is a simple web application for managing student information. The application allows users to add new students, view a list of existing students, and delete students from the database.
+
+Project Structure
+The project consists of the following components:
+
+Client-side (Frontend):
+
+index.html: The main HTML file containing the structure of the web page.
+style.css: The stylesheet for styling the HTML elements.
+client.js: The JavaScript file containing client-side logic for adding, fetching, and deleting students.
+Server-side (Backend):
+
+server.js: The main server file written in Node.js using Express. It handles routing, serves static files, and defines REST API endpoints.
+students.db: SQLite database file containing the students' data.
+How to Run
+Install Node.js and npm on your machine.
+Clone this repository to your local machine.
+Navigate to the project directory in the terminal.
+Run npm install to install the required dependencies.
+Run node server.js to start the server.
+Open a web browser and go to http://localhost:3000 to access the Student App.
+Usage
+Add Student:
+
+Fill out the "Add Student" form with the required information (First Name, Last Name, Group Number, Student ID).
+Click the "Add Student" button to add the student to the database.
+View Student List:
+
+The "Student List" section displays a list of all students currently in the database.
+Delete Student:
+
+Fill out the "Delete Student" form with the Student ID of the student you want to delete.
+Click the "Delete Student" button to remove the student from the database.
+Endpoints
+POST /students:
+
+Adds a new student to the database.
+Requires a JSON payload with the student's information (firstName, lastName, middleName, birthDate, groupNumber, studentId).
+GET /students:
+
+Retrieves a list of all students from the database.
+DELETE /students/:id:
+
+Deletes a student from the database based on the provided Student ID.
+Dependencies
+express: Web framework for Node.js.
+path: Utility module for working with file and directory paths.
+sqlite3: SQLite database driver for Node.js.
+License
+This project is licensed under the MIT License. Feel free to modify and use the code for your own purposes.

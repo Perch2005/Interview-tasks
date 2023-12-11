@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student App</title>
+</head>
+<body>
+    <h1>Student App</h1>
+
+    <h2>Add Student</h2>
+    <form id="addStudentForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName">
+
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" required>
+
+        <label for="groupNumber">Group Number:</label>
+        <input type="text" id="groupNumber" required>
+
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" required>
+
+        <button type="button" onclick="addStudent()">Add Student</button>
+    </form>
+
+    <h2>Student List</h2>
+    <ul id="studentList"></ul>
+
+    <h2>Delete Student</h2>
+    <form id="deleteStudentForm">
+        <label for="deleteStudentId">Student ID:</label>
+        <input type="text" id="deleteStudentId" required>
+
+        <button type="button" onclick="deleteStudent()">Delete Student</button>
+    </form>
+
+    <script src="client.js"></script>
+</body>
+</html>

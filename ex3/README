@@ -1,0 +1,56 @@
+Todo List App
+This simple Todo List app allows users to manage and organize their reminders. Users can add, edit, and delete reminders, as well as filter and sort them based on different criteria.
+
+Features
+Add Reminder: Click on the "Add Reminder" button to open a modal where you can input the reminder text, description, date, and time. Click "Save Reminder" to add the reminder.
+
+Edit Reminder: To edit a reminder, click on the reminder text. This action is not implemented in the current version but can be added in the future.
+
+Delete Reminder: To delete a reminder, click on the checkbox next to the reminder and then click on the "Show Completed" button.
+
+Filter Reminders: Use the search bar to filter reminders by text. Additionally, use the "Show All," "Today," and "This Week" buttons to filter reminders based on specific criteria.
+
+Sort Reminders: Click on the "Sort" dropdown to choose sorting options such as "Low to High," "High to Low," or "Not Sorted."
+
+Date Picker: Use the calendar to select a specific date for filtering reminders.
+
+Show Completed: Check the "Show Completed" checkbox to display completed reminders.
+
+Project Structure
+HTML: The frontend structure is defined in index.html.
+
+CSS: Styling is applied using style.css.
+
+JavaScript: The main logic for the Todo List app is implemented in main.js.
+
+Server (Node.js): The server-side logic, handling requests and managing a SQLite database, is implemented in server.js.
+
+How to Run
+Clone the repository.
+
+
+git clone <repository-url>
+Navigate to the project directory.
+
+
+cd <project-directory>
+Install dependencies.
+
+
+npm install
+Run the server.
+
+
+npm start
+Open your browser and go to http://localhost:3000 to use the Todo List app.
+Dependencies
+Express.js
+SQLite3
+jQuery
+jQuery UI
+Notes
+This project uses a simple SQLite database to store reminders. Ensure that you have SQLite installed on your machine.
+
+The app is a basic implementation and may lack some features. Additional features and improvements can be made as needed.
+
+Feel free to contribute to this project by adding new features, fixing bugs, or improving the user interface!
